@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>تبديل صوت الفيديو</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h2>🎬 تبديل صوت الفيديو بصوت MP3</h2>
+
+<input type="file" id="video" accept="video/mp4"><br>
+<input type="file" id="audio" accept="audio/mp3"><br>
+
+<button onclick="run()">ابدأ المعالجة</button>
+
+<p id="status">في الانتظار...</p>
+
+<video id="preview" controls></video><br>
+
+<a id="download" style="display:none" download="output.mp4">⬇️ تحميل الفيديو النهائي</a>
+
+<script src="https://cdn.jsdelivr.net/npm/@ffmpeg/ffmpeg@0.12.10/dist/ffmpeg.min.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
